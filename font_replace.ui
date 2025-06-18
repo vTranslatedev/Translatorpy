@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FontReplaceDialog</class>
+ <widget class="QDialog" name="FontReplaceDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>733</width>
+    <height>438</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Font Replace</string>
+  </property>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>691</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>600</width>
+     <height>220</height>
+    </size>
+   </property>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>0</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>font</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="selectFontText">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>160</y>
+      <width>521</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>input or choose or drag the font which supports the language after translation. Example : DejaVuSans.ttf (ren'py 's default font)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>190</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>font</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectFontBtn">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>160</y>
+      <width>81</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="replaceFontBtn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>350</y>
+      <width>681</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>replace font</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openFontStyleBtn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>390</y>
+      <width>681</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>open font style file</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>directory</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="selectDirText_3">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>38</y>
+      <width>521</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>input or choose or drag the directory you want to replace font here.  Example:F:\GameName\game\tl\language</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectDirBtn_3">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>38</y>
+      <width>81</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="rtlCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>270</y>
+      <width>681</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Enable RTL (Right To Left)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>290</y>
+      <width>681</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(Fix reversed font problem for some languages like arabic, urdu)</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

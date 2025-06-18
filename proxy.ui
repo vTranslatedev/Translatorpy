@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProxyDialog</class>
+ <widget class="QDialog" name="ProxyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>93</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ProxySettings</string>
+  </property>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enable Proxy</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="proxyEdit">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>20</y>
+     <width>271</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>example : http://localhost:10809</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>10</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>proxy address:</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="confirmButton">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>60</y>
+     <width>561</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>confirm</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

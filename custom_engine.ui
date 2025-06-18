@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CustomDialog</class>
+ <widget class="QDialog" name="CustomDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1174</width>
+    <height>668</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Custom Translation Engine</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="1">
+    <widget class="QPushButton" name="clearLogBtn">
+     <property name="text">
+      <string>clear log</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="5">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>600</width>
+       <height>650</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <widget class="QPushButton" name="selectScriptBtn">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>220</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>520</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>rename</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nameLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>65</y>
+        <width>501</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>relative to Active Translation Engine</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="customComboBox">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>5</y>
+        <width>411</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>add a new custom engine</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QCheckBox" name="renameScriptCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>295</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rename Script</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>405</y>
+        <width>171</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>rename</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="renameSourceLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>400</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>rename the  source name in  'supported_language' folder</string>
+      </property>
+      <property name="placeholderText">
+       <string>rename the  source name in  'supported_language' folder</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="saveKeySecretCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>560</y>
+        <width>421</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save the key and secret in the upper right corner</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="selectScriptText">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>220</y>
+        <width>421</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>input or choose or drag the python script which supports translation api.  The script will be copied to 'custom_engine' folder</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="renameSourceCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>405</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rename Source</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="renameTargetCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>526</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rename Target</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="keyCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>160</y>
+        <width>231</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Key Support(API_KEY)</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="queueCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>190</y>
+        <width>591</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Queue Support (Can the api support list input in one request such as:['Hello','World'])</string>
+      </property>
+      <property name="text">
+       <string>Queue Support (Can the api support list input in one request such as:['Hello','World'])</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>450</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>target</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="selectSourceText">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>330</y>
+        <width>421</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>input or choose or drag the source language file which applies language map.  The file will be copied to 'supported_language' folder</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="urlLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>115</y>
+        <width>501</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>relative to detail information</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="deleteButton">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>620</y>
+        <width>301</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>295</y>
+        <width>171</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>rename</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="selectTargetText">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>435</y>
+        <width>421</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>input or choose or drag the target language file which applies language map.  The file will be copied to 'supported_language' folder</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>custom engine list</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="selectTargetBtn">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>435</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="secretCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>160</y>
+        <width>351</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Secret Support(API_SECRET)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="selectSourceBtn">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>330</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="renameTargetLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>520</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>rename the  target name in  'supported_language' folder</string>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="placeholderText">
+       <string>rename the  target name in  'supported_language' folder</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="saveButton">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>590</y>
+        <width>301</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>115</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>url</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="renameScriptLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>290</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>rename the  script name in  'custom engine' folder</string>
+      </property>
+      <property name="placeholderText">
+       <string>rename the  script name in  'custom engine' folder</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>230</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>script</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>340</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>source</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>65</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>name</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QTextEdit" name="logTextEdit">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>550</width>
+       <height>330</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="2" column="1" colspan="6">
+       <widget class="QLineEdit" name="keyEdit"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>target</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>source</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="6">
+       <widget class="QLineEdit" name="secretEdit">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="6">
+       <widget class="QComboBox" name="targetComboBox"/>
+      </item>
+      <item row="5" column="1" colspan="6">
+       <widget class="QComboBox" name="sourceComboBox"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>API_KEY:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>APP_SECRET:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QComboBox" name="engineComboBox">
+        <property name="minimumSize">
+         <size>
+          <width>240</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1" colspan="6">
+       <widget class="QLineEdit" name="untranslatedEdit">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="3">
+       <widget class="QPushButton" name="testButton">
+        <property name="text">
+         <string>Test</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5" colspan="2">
+       <widget class="QLabel" name="detailLabel">
+        <property name="font">
+         <font>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>detail information</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <widget class="QLabel" name="label_10">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Active Translation Engine:</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>untranslated text</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

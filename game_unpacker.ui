@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameUnpackerDialog</class>
+ <widget class="QDialog" name="GameUnpackerDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>323</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Game Unpacker</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>file</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="selectFileBtn">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>25</y>
+     <width>81</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="selectFileText">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>25</y>
+     <width>411</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>input or choose or drag the game you want to unpack it's rpa files.Example:F:/DemoGame.exe</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="unpackBtn">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>491</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Unpack</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="autoCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>551</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Auto close the game after unpacked</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string notr="true">MAX_UNPACK_THREADS : </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="maxThreadsLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>188</y>
+     <width>391</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="overwriteCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>571</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Overwrite the rpy file if exsits</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="unpackAllCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>631</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Unpack all files (if disabled only script files will be unpacked)</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
